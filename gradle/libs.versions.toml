@@ -1,0 +1,72 @@
+[versions]
+agp = "8.7.0-beta01"
+androidGifDrawable = "1.2.28"
+animatoo = "master"
+appUpdate = "2.1.0"
+circleimageview = "3.1.0"
+coreprogress = "1.0.2"
+coreSplashscreen = "1.0.1"
+firebaseBom = "33.2.0"
+icons = "1.1.0"
+imageslideshow = "0.1.2"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+kotlinStdlibJdk7 = "1.9.23"
+lottie = "6.4.0"
+material = "1.12.0"
+activity = "1.9.2"
+constraintlayout = "2.1.4"
+okhttpBom = "4.12.0"
+outlinetextview = "1.0.5"
+sdpAndroid = "1.1.1"
+smoothbottombar = "1.7.9"
+sspAndroid = "1.1.1"
+touchimageview = "1.4.1"
+picasso = "2.71828"
+glide = "4.16.0"
+googleGmsGoogleServices = "4.4.2"
+core = "1.13.1"
+
+[libraries]
+android-gif-drawable = { module = "pl.droidsonroids.gif:android-gif-drawable", version.ref = "androidGifDrawable" }
+animatoo = { module = "com.github.mohammadatif:Animatoo", version.ref = "animatoo" }
+app-update = { module = "com.google.android.play:app-update", version.ref = "appUpdate" }
+app-update-ktx = { module = "com.google.android.play:app-update-ktx", version.ref = "appUpdate" }
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
+core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+coreprogress = { module = "io.github.lizhangqu:coreprogress", version.ref = "coreprogress" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-config = { module = "com.google.firebase:firebase-config" }
+firebase-database = { module = "com.google.firebase:firebase-database" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore" }
+firebase-inappmessaging-display = { module = "com.google.firebase:firebase-inappmessaging-display" }
+firebase-messaging = { module = "com.google.firebase:firebase-messaging" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+icons = { module = "io.github.oneuiproject:icons", version.ref = "icons" }
+imageslideshow = { module = "com.github.denzcoskun:ImageSlideshow", version.ref = "imageslideshow" }
+jetbrains-kotlin-stdlib-jdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlinStdlibJdk7" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlin-stdlib-jdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+okhttp = { module = "com.squareup.okhttp3:okhttp" }
+okhttp-bom = { module = "com.squareup.okhttp3:okhttp-bom", version.ref = "okhttpBom" }
+outlinetextview = { module = "com.github.iamBedant:OutlineTextView", version.ref = "outlinetextview" }
+sdp-android = { module = "com.intuit.sdp:sdp-android", version.ref = "sdpAndroid" }
+smoothbottombar = { module = "com.github.ibrahimsn98:SmoothBottomBar", version.ref = "smoothbottombar" }
+picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+ssp-android = { module = "com.intuit.ssp:ssp-android", version.ref = "sspAndroid" }
+touchimageview = { module = "com.github.MikeOrtiz:TouchImageView", version.ref = "touchimageview" }
+core = { group = "androidx.core", name = "core", version.ref = "core" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }

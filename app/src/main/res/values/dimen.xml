@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radius_CardView">@dimen/_25sdp</dimen>
+    <dimen name="border_CardView">0dp</dimen>
+
+
+    <dimen name="radius_EditText">@dimen/_25sdp</dimen>
+    <dimen name="border_EditText">@dimen/_1sdp</dimen>
+
+</resources>

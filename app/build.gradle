@@ -1,0 +1,93 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
+}
+
+android {
+    namespace 'com.nub.studentportal'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.nub.studentportal"
+        minSdk 27
+        //noinspection OldTargetApi
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    //default
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.core
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    //firebase
+    implementation(platform(libs.firebase.bom))
+    implementation libs.firebase.config
+    implementation libs.firebase.inappmessaging.display
+    implementation libs.firebase.messaging
+    implementation libs.firebase.firestore
+    implementation libs.firebase.database
+
+    //play_update
+    implementation libs.app.update
+    implementation libs.app.update.ktx
+    implementation libs.kotlin.stdlib.jdk7
+    implementation libs.jetbrains.kotlin.stdlib.jdk7
+    implementation libs.core.splashscreen
+
+    //added
+    implementation libs.android.gif.drawable
+    implementation libs.touchimageview
+    implementation libs.circleimageview
+
+    implementation libs.sdp.android
+    implementation libs.ssp.android
+
+    implementation libs.lottie
+    implementation libs.animatoo
+
+    implementation libs.smoothbottombar
+
+    implementation libs.imageslideshow
+    implementation libs.picasso
+    implementation libs.glide
+    implementation libs.outlinetextview
+
+    //okHTTP
+    implementation(platform(libs.okhttp.bom))
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+    implementation libs.coreprogress
+
+    //oneUI_icons
+    implementation libs.icons
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}

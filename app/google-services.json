@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "657289618308",
+    "project_id": "studentportal-tanjilaholy",
+    "storage_bucket": "studentportal-tanjilaholy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657289618308:android:2bdc35d77f5dfe9320b3d1",
+        "android_client_info": {
+          "package_name": "com.nub.studentportal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQJ_gtsrROkXhjdjPA9gUH0wFIncExF5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
