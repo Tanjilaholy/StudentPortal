@@ -50,6 +50,7 @@ dependencies {
     implementation libs.firebase.messaging
     implementation libs.firebase.firestore
     implementation libs.firebase.database
+    implementation libs.firebase.auth
 
     //play_update
     implementation libs.app.update

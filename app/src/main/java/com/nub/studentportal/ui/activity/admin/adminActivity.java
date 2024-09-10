@@ -1,6 +1,4 @@
-package com.nub.studentportal.ui.activity;
-
-import static com.nub.studentportal.utils.prempdr.fullScreen;
+package com.nub.studentportal.ui.activity.admin;
 
 import android.os.Bundle;
 
@@ -12,18 +10,17 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.nub.studentportal.R;
 
-public class loginActivity extends AppCompatActivity {
+public class adminActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_admin);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        fullScreen(this);
     }
 }

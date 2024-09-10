@@ -17,7 +17,19 @@
         android:theme="@style/mainTheme"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activity.loginActivity"
+            android:name=".ui.activity.user.forgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.admin.adminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.user.registerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.user.loginActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             tools:ignore="DiscouragedApi,LockedOrientationActivity">
